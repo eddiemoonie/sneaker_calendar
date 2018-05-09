@@ -36,4 +36,20 @@ class SneakerCalendar::CLI
     end
   end
 
+  def print_sneaker_info(sneaker)
+    puts ""
+    puts "-------- #{sneaker.name} --------"
+    puts ""
+    puts "COLOR:                  #{sneaker.color}"
+    puts "RELEASE DATE:           #{sneaker.date}"
+    puts "STYLE CODE:             #{sneaker.style_code}"
+    puts "RETAIL PRICE:           #{sneaker.price}"
+    puts "LINK(pics available):   #{sneaker.url}"
+    puts ""
+    puts "-------- Description --------"
+    puts ""
+    puts "#{sneaker.description}"
+    puts ""
+  end
+
 end
