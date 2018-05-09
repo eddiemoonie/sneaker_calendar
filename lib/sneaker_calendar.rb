@@ -1,5 +1,8 @@
-require "sneaker_calendar/version"
+require 'open-uri'
+require 'nokogiri'
+require 'pry'
 
-module SneakerCalendar
-  # Your code goes here...
-end
+require_relative "../lib/sneaker_calendar/version"
+require_relative "../lib/sneaker_calendar/cli"
+require_relative "../lib/sneaker_calendar/sneaker"
+require_relative "../lib/sneaker_calendar/scraper"
